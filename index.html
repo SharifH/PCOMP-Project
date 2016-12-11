@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="mydiv">
+
+        <div id="emotion_container">
+            <div id="emotion_icons">
+                <img class="emotion_icon" id="icon1" src="img/icon_angry.png">
+                <img class="emotion_icon" id="icon2" src="img/icon_sad.png">
+                <img class="emotion_icon" id="icon3" src="img/icon_surprised.png">
+                <img class="emotion_icon" id="icon4" src="img/icon_happy.png">
+            </div>
+            <div id='emotion_chart'></div>
+        </div>
+        <div id="controls">
+            <input class="btn" type="button" value="wait, loading video" disabled="disabled" onclick="startVideo()" id="startbutton"></input>
+        </div>
+    </div>
+    <!-- <iframe id="iframe1" src='http://PoV.local/PoV_Video_http/min.php' frameborder="0"/> -->
+    <script type="text/javascript" src="js/emotion-classifier.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/emotion-model.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/emotion-detection.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/d3.min.js"></script>
+    <script type="text/javascript" src="js/webgazer.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
